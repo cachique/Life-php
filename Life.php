@@ -33,6 +33,17 @@
             }
             return $output;
         }
+
+        function setLivingElement($i, $j){
+            if($i < 1 || $i > 25) {
+                return false;
+            }
+            if($j < 1 || $j > 50) {
+                return false;
+            }
+            $this->grid[$i][$j] = 1;
+            return true;
+        }
         
     }
 ?>
