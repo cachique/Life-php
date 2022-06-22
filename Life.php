@@ -14,5 +14,25 @@
                 $this->grid[$i] = $height;
             }
         }
+
+        function render(){
+            $output = '';
+
+            foreach ($this->grid as $widthId => $width) {
+                foreach ($width as $heightId => $height) {
+                    # code...
+                    if ($height == 1){
+                        $output .= "*";
+                    }
+                    else {
+                        $output .= ".";
+                    }
+                }
+                $output .= PHP_EOL;
+                # code...
+            }
+            return $output;
+        }
+        
     }
 ?>
