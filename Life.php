@@ -45,5 +45,16 @@
             return true;
         }
         
+        function setDeadElement($i, $j){
+            if($i < 1 || $i > 25) {
+                return false;
+            }
+            if($j < 1 || $j > 50) {
+                return false;
+            }
+            $this->grid[$i][$j] = 0;
+            return true;
+        }
+        
     }
 ?>
